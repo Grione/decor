@@ -1,0 +1,42 @@
+@function rem($px){
+    @return $px / 14px + 0rem;
+}
+
+//resolution
+
+$dekstop: 1200px;
+$tablets: 768px;
+$phones: 480px;
+
+//mixin
+
+@mixin dekstop {
+    @media screen and (max-width:$dekstop){
+        @content;
+    }
+}
+
+@mixin tablets {
+    @media screen and (max-width:$tablets){
+        @content;
+    }
+}
+
+@mixin phones {
+    @media screen and (max-width:$phones){
+        @content;
+    }
+}
+
+//import css
+
+@import "font.scss";
+@import "layout.scss";
+@import "header.scss";
+@import "section__hero.scss";
+@import "section__about.scss";
+@import "section__stage.scss";
+@import "section__decisions.scss";
+@import "section__partner.scss";
+@import "section__project.scss";
+@import "footer.scss";

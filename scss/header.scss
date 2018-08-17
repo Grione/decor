@@ -1,0 +1,90 @@
+.burger {
+display: none;
+cursor: pointer;
+
+@include tablets {
+    display: block;
+}
+
+@include phones {
+    display: block;
+}
+
+}
+
+.burger__item {
+    width: 30px;
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+.header {
+    height: rem(100px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo   {
+    width: 100%;
+    max-width:rem(228px);
+    height: rem(73px);
+    margin-right: rem(10px);
+}
+
+.logo__link {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+.logo__img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav {
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        display: none;
+    }
+}
+
+.nav__list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.nav__item {
+    display: inline-block;
+    margin-right: rem(46px);
+
+    &:last-child {
+        margin-right: 0;
+    }
+    
+}
+
+.nav__link {
+    display: inline-block;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: rem(14px);
+    font-weight: bold;
+    color: #000;
+}

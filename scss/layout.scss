@@ -1,0 +1,83 @@
+html{
+    font-family: "open sans", serif;
+    font-size: 14px;
+    outline: none;
+
+    @include dekstop {
+        font-size: 14px;
+    }
+
+    @include tablets {
+        font-size: 12px;
+    }
+
+    @include phones {
+        font-size: 11px;
+    }
+}
+
+ul, ol, li {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 96%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section__header {
+    padding-top: rem(90px);
+    padding-bottom: rem(30px);
+    text-align: center;
+
+    @include tablets {
+        padding-top: rem(15px);
+        padding-bottom: rem(5px);
+    }
+
+    @include phones {
+        padding-top: rem(15px);
+        padding-bottom: rem(5px);
+    }
+}
+
+.header__black {
+    font-family: "open sanslight";
+    text-transform: uppercase;
+    color: #000000;
+    font-size: rem(36px);
+
+    &:after {
+        content: "";
+        display: block;
+        width: rem(60px);
+        height: rem(2px);
+        background-color: #000;
+        margin: 0 auto;
+        margin-top: rem(15px);
+    }
+}
+
+.header__white {
+    font-family: "open sanslight";
+    text-transform: uppercase;
+    color: #fff;
+    font-size: rem(36px); 
+
+    &:after {
+        content: "";
+        display: block;
+        width: rem(60px);
+        height: rem(2px);
+        background-color: #fff;
+        margin: 0 auto;
+        margin-top: rem(15px);
+    }
+}

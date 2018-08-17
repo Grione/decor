@@ -1,0 +1,21 @@
+.section__hero-bg{
+    background-image: url("../img/bg1.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: rem(600px);
+    width: 100%;
+    text-align: center;
+    line-height: rem(600px);
+}
+
+.section__hero-h {
+    font-family: 'open sanslight';
+    font-size: rem(52px);
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: #060606 rem(3px) rem(2px) rem(2px);
+
+    @include phones {
+        font-size: 3.01429rem;
+    }
+}

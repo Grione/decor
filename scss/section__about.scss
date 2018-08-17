@@ -1,0 +1,48 @@
+.section__about-logo {
+    max-width: rem(352px);
+    width: 100%;
+    height:rem(113px);
+    margin-top:rem(30px);
+}
+
+.section__about-main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: rem(93px);
+
+    @include phones {
+        padding-bottom: rem(30px);
+    }
+}
+
+.section__about-txt {
+    text-align: center;
+}
+
+.section__about-desc {
+    padding: 0 rem(97px);
+    font-size: rem(16px);
+    margin-top: rem(30px);
+
+    @include tablets {
+        padding: 0;
+    }
+    
+    @include phones {
+        padding: 0;
+    }
+}
+
+.desc__bold {
+    font-family: 'open sanssemibold';
+}
+
+.desc__p { 
+    margin-bottom: rem(30px);
+
+    @include phones {
+        margin-bottom: rem(10px);
+    }
+}
